@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class = "alert alert-success">
+
+    <center>
+
+        <h1>Original URL: "{{ obj.originalURL }}"</h1>
+        <h1>Your Shortened URL: "{{ obj.shortened }}"</h1>
+        <a href="{{ obj.originalURL }}"><button type = "button" class = "btn btn-dark">Go To Website</button></a>
+
+    </center>
+
+</div>
+
+{% endblock content %}

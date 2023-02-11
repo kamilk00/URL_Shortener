@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class = "alert alert-info">
+
+    <form method = "POST" action = "/create_short_URL/">
+
+        {% csrf_token %}
+        {{ form.as_p }}
+        <center><button type = "submit" class = "btn btn-dark">Create URL</button></center>
+
+    </form>
+
+</div>
+
+{% endblock content %}
